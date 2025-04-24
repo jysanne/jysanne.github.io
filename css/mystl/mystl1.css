@@ -1,0 +1,9 @@
+@font-face{
+    font-family:'kai' ;  /* 字体名自定义即可 */
+    src:url('/themes/butterfly/source/fonts/TaiWanQuanZiKuZhengKaiTi-2.ttf'); /* 字体文件路径 */
+    font-display : swap;
+}
+
+h1#site-title {
+    font-family: 'kai', sans-serif;
+}
