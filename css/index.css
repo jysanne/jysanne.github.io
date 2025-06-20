@@ -1324,7 +1324,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: 14px;
+  --global-font-size: 16px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #d2ebfd;
@@ -1363,6 +1363,10 @@ canvas:not(#ribbon-canvas),
   --default-bg-color: #b298cd;
   --zoom-bg: #fff;
   --mark-bg: rgba(0,0,0,0.3);
+  --homepage-width: 1200px;
+  --categories-width: 1200px;
+  --tags-width: 1200px;
+  --archives-width: 1200px;
 }
 body {
   position: relative;
@@ -2138,6 +2142,18 @@ figure.highlight pre .javascript .function {
   padding: 40px 15px;
   max-width: 1200px;
   width: 100%;
+}
+.page:has(#recent-posts) .layout {
+  max-width: var(--homepage-width);
+}
+.page:has(.article-sort) .layout {
+  max-width: var(--homepage-width);
+}
+.page:has(.category-lists) .layout {
+  max-width: var(--categories-width);
+}
+.page:has(.tag-cloud-list) .layout {
+  max-width: var(--tags-width);
 }
 @media screen and (max-width: 900px) {
   .layout {
