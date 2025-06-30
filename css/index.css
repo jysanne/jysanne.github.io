@@ -3917,7 +3917,7 @@ figure.highlight pre .javascript .function {
   text-align: center;
 }
 #pagination .page-number.current {
-  background: #b298cd;
+  background: #6cc;
   color: var(--white);
 }
 #pagination .full-width {
